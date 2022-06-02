@@ -1,0 +1,28 @@
+name: Multilple Job  Test
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  Commands-on-Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Bash Shell
+        run: echo "This is Bash Shell"
+
+
+      - name: Run Powerhshell on Ubuntu
+        run: echo "This is Powershell"
+        shell: pwsh
+
+  Commands-on-Windows:
+    runs-on: windows-latest
+    needs: [Commands-on-Ubuntu]
+    steps:
+      - name: Run Default Powershell - Get Working Directory
+        run: Get-Location
+
+      - name: Run Bash on windows - Get Working Directory
+        run: pwd
+        shell: bash
