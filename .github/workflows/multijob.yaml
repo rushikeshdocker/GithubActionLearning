@@ -1,4 +1,4 @@
-name: Multil Shell Test
+name: Multilple Job  Test
 on:
   push:
     branches:
