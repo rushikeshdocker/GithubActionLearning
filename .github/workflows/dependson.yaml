@@ -1,4 +1,4 @@
-name: Multilple Job  Test
+name: Multilple Job with Dependency Test
 on:
   push:
     branches:
