@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: Run Bash Shell
         run: echo "Bash Shell"
-        
+
 
       - name: Run Powerhshell
         run: echo "Hello From Powershell"
-        shell: powershell
+        shell: pwsh
 
