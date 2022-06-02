@@ -1,6 +1,7 @@
 name: Test github action
 on: push
 
+
 jobs:
   shell-test:
     runs-on: ubuntu-latest
@@ -11,4 +12,3 @@ jobs:
       - name: multiline script
         run: |
           npm -v
-          
