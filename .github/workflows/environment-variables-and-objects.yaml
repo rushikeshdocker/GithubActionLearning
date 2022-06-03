@@ -1,0 +1,21 @@
+name: Display Environment Variables and builtin Objects
+
+on: 
+  workflow_dispatch:
+    
+
+jobs:
+  Env-and-object-display-wf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display environment Variables
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+      
+      - name: Display builtin GITHUB Objects
+        run: |
+          echo "${{github.token}}"
+          
+
