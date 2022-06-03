@@ -1,0 +1,21 @@
+name: Checkout Workflow test
+on: 
+  workflow_dispatch:
+
+jobs:
+  Checkout-workflow-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files before Checkout
+        run: |
+          pwd
+          ls -a
+
+      - name: Checkout
+        uses: actions/actions/checkout@v3
+
+      - name: List Files After Checkout
+        run: |
+          pwd
+          ls -a
+              
