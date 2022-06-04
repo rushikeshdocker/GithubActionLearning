@@ -1,9 +1,10 @@
 name: Multilple Job  Test
 on:
-  push:
-    branches:
-      - "main"
-
+  # push:
+  #   branches:
+  #     - "main"
+  workflow_dispatch:
+    
 jobs:
   Commands-on-Ubuntu:
     runs-on: ubuntu-latest

@@ -1,9 +1,11 @@
 name: Sample Action Workflow
 
 on: 
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
+  workflow_dispatch:
+    
 
 jobs:
   Simple-Action-Workflow:
