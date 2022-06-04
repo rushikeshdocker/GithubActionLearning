@@ -2,7 +2,13 @@ name: Display Environment Variables and builtin Objects
 
 on: 
   workflow_dispatch:
-    
+# pull_request: 
+#  types: [opened, reopened, closed, assigned]
+# https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+
+# schedule:
+#   - cron: "0/5 * * * *"   ##runs every 5 minue
+#   - cron: "0/10 * * * *"  ## multiple schedule can be added as array object
 
 jobs:
   Env-and-object-display-wf:
@@ -17,5 +23,5 @@ jobs:
       - name: Display builtin GITHUB Objects
         run: |
           echo "${{github.token}}"
-          
+
 
