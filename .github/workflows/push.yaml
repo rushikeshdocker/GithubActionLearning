@@ -1,4 +1,4 @@
-name: Push fuel to repo using github token
+name: Push file to repo using github token
 
 on: 
   workflow_dispatch:
